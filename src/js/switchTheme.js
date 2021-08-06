@@ -26,11 +26,8 @@ function themeToggleHandler(e) {
     }
 }
 
-getLocalStorageTheme();
-
 function getLocalStorageTheme() {
-    const currentTheme = localStorage.getItem("theme");
-
+    const currentTheme = localStorage.getItem('theme');
   if (currentTheme === Theme.DARK) {
     refs.body.classList.add(Theme.DARK);
     refs.input.checked = true;
