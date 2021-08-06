@@ -1,2 +1,2 @@
 import './js/cardsList';
-// import './js/switchTheme';
+import './js/switchTheme';
