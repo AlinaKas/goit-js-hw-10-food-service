@@ -13,7 +13,7 @@ refs.body.classList.add(Theme.LIGHT);
 refs.input.addEventListener('change', themeToggleHandler);
 document.addEventListener('DOMContentLoaded', getLocalStorageTheme);
 
-function themeToggleHandler(e) {
+function themeToggleHandler() {
     // refs.input.toggleAttribute('checked');
     if (refs.input.checked) {
         localStorage.setItem('theme', Theme.DARK);
