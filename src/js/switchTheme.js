@@ -17,12 +17,12 @@ function themeToggleHandler(e) {
     // refs.input.toggleAttribute('checked');
     if (refs.input.checked) {
         localStorage.setItem('theme', Theme.DARK);
-        document.body.classList.remove(Theme.LIGHT);
-        document.body.classList.add(Theme.DARK);
+        refs.body.classList.remove(Theme.LIGHT);
+        refs.body.classList.add(Theme.DARK);
     } else {
         localStorage.setItem('theme', Theme.LIGHT);
-        document.body.classList.remove(Theme.DARK);
-        document.body.classList.add(Theme.LIGHT);
+        refs.body.classList.remove(Theme.DARK);
+        refs.body.classList.add(Theme.LIGHT);
     }
 }
 
