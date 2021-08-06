@@ -29,7 +29,8 @@ function themeToggleHandler(e) {
 function getLocalStorageTheme() {
     const currentTheme = localStorage.getItem('theme');
   if (currentTheme === Theme.DARK) {
-    refs.body.classList.add(Theme.DARK);
+      refs.body.classList.add(Theme.DARK);
+      refs.body.classList.remove(Theme.LIGHT);
     refs.input.checked = true;
   }
 }
