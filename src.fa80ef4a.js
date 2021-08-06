@@ -9,8 +9,8 @@ module.exports=[{id:"XWaQXcbk0",name:"Картофель, запеченный �
 },{}],"v28g":[function(require,module,exports) {
 "use strict";var e=u(require("../templates/cardsMarkup.hbs")),t=u(require("../menu.json"));function u(e){return e&&e.__esModule?e:{default:e}}const r=document.querySelector(".js-menu"),n=(0,e.default)(t.default);function a(t){return t.map(e.default).join("")}a(t.default),r.insertAdjacentHTML("beforeend",n);
 },{"../templates/cardsMarkup.hbs":"UBDR","../menu.json":"mA8c"}],"Sq5u":[function(require,module,exports) {
-const e={LIGHT:"light-theme",DARK:"dark-theme"},t={body:document.querySelector("body"),input:document.querySelector("#theme-switch-toggle")},d="theme";function o(d){t.input.checked?(localStorage.setItem("theme",e.DARK),document.body.classList.remove(e.LIGHT),document.body.classList.add(e.DARK)):(localStorage.setItem("theme",e.LIGHT),document.body.classList.remove(e.DARK),document.body.classList.add(e.LIGHT))}function c(){localStorage.getItem("theme")===e.DARK&&(t.body.classList.add(e.DARK),t.input.checked=!0)}t.body.classList.add(e.LIGHT),t.input.addEventListener("change",o),document.addEventListener("DOMContentLoaded",c);
+const e={LIGHT:"light-theme",DARK:"dark-theme"},t={body:document.querySelector("body"),input:document.querySelector("#theme-switch-toggle")},d="theme";function o(d){t.input.checked?(localStorage.setItem("theme",e.DARK),document.body.classList.remove(e.LIGHT),document.body.classList.add(e.DARK)):(localStorage.setItem("theme",e.LIGHT),document.body.classList.remove(e.DARK),document.body.classList.add(e.LIGHT))}function c(){localStorage.getItem("theme")===e.DARK&&(t.body.classList.add(e.DARK),t.body.classList.remove(e.LIGHT),t.input.checked=!0)}t.body.classList.add(e.LIGHT),t.input.addEventListener("change",o),document.addEventListener("DOMContentLoaded",c);
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./js/cardsList"),require("./js/switchTheme");
 },{"./js/cardsList":"v28g","./js/switchTheme":"Sq5u"}]},{},["Focm"], null)
-//# sourceMappingURL=/goit-js-hw-10-food-service/src.e24c3e0c.js.map
+//# sourceMappingURL=/goit-js-hw-10-food-service/src.fa80ef4a.js.map
