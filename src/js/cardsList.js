@@ -2,6 +2,9 @@
 import cardsMarkup from '../templates/cardsMarkup.hbs';
 import menu from '../menu.json';
 
+
+console.log(cardsMarkup);
+
 const cardsListRefs = document.querySelector('.js-menu');
 const cardsRef = cardsMarkup(menu);
 
