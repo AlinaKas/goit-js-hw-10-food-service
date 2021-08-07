@@ -7,14 +7,12 @@ const refs = {
     body: document.querySelector('body'),
     input: document.querySelector('#theme-switch-toggle'),
 };
-const STORAGE_KEY = "theme";
 
 refs.body.classList.add(Theme.LIGHT);
 refs.input.addEventListener('change', themeToggleHandler);
 document.addEventListener('DOMContentLoaded', getLocalStorageTheme);
 
 function themeToggleHandler() {
-    // refs.input.toggleAttribute('checked');
     if (refs.input.checked) {
         localStorage.setItem('theme', Theme.DARK);
         refs.body.classList.remove(Theme.LIGHT);
